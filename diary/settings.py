@@ -79,16 +79,29 @@ WSGI_APPLICATION = 'diary.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'diarydb',
+#        'USER': 'postgres',
+#        'PASSWORD': 'github.com',
+#        'HOST': 'localhost',
+#        'PORT': '5432',
+#    }
+#}
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'diarydb',
-        'USER': 'postgres',
-        'PASSWORD': 'github.com',
-        'HOST': 'localhost',
+        'NAME': 'postgres',
+        'USER': 'django_aws_demo',
+        'PASSWORD': 'django',
+        'HOST': 'django-aws-demo.c7fpw8imgf8d.us-east-2.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
+
 
 
 # Password validation
